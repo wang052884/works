@@ -3,8 +3,8 @@
 <head>
 <title>JQuery Cycle Plugin - Basic Demo</title>
 <style type="text/css">
-.slideshow { height: 232px; width: 232px; margin: auto }
-.slideshow img { padding: 15px; border: 1px solid #ccc; background-color: #eee; }
+#s5 { height: 232px; width: 232px; margin: auto }
+#s5 img { padding: 15px; border: 1px solid #ccc; background-color: #eee; }
 </style>
 <!-- include jQuery library -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
@@ -12,16 +12,15 @@
 <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-$('#zoom').cycle({ 
-    fx:    'zoom', 
-    sync:  false, 
-    delay: -2000 
+$('#s5').cycle({ 
+    fx:     'shuffle', 
+    delay:  -4000 
 });
 });
 </script>
 </head>
 <body>
-	<div id="zoom">
+	<div id="s5" align="right">
 		<img src="1.jpg" width="200" height="200" />
 		<img src="2.jpg" width="200" height="200" />
 		<img src="3.jpg" width="200" height="200" />
