@@ -5,6 +5,10 @@
 <style type="text/css">
 #s5 { height: 232px; width: 232px; margin: auto }
 #s5 img { padding: 15px; border: 1px solid #ccc; background-color: #eee; }
+img { height: 232px; width: 232px; margin: auto }
+#nav a { border: 1px solid #ccc; background: #fc0; text-decoration: none; margin: 0 5px; padding: 3px 5px;  }
+#nav a.activeSlide { background: #ea0 }
+#nav a:focus { outline: none; }
 </style>
 <!-- include jQuery library -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
@@ -12,15 +16,19 @@
 <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-$('#s5').cycle({ 
-    fx:     'shuffle', 
-    delay:  -4000 
+$('#s4') 
+.before('<div id="nav">') 
+.cycle({ 
+    fx:     'turnDown', 
+    speed:  'fast', 
+    timeout: 0, 
+    pager:  '#nav' 
 });
 });
 </script>
 </head>
 <body>
-	<div id="s5" align="right">
+	<div id="s4" align="right">
 		<img src="1.jpg" width="200" height="200" />
 		<img src="2.jpg" width="200" height="200" />
 		<img src="3.jpg" width="200" height="200" />
