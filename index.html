@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <style>
-
+    <style type="text/css">
     #b1 {
         background-color: #CA82FF;
     }
@@ -17,7 +16,11 @@
     }
     .important {color:red; background-color:#ABFFFF;}
 
+
     </style>
+
+  
+    </script> 
 
 </head>
 
@@ -29,9 +32,29 @@
 	$("#nav").load( "nav.html");
 	</script>
 
-	<img src="慈科大ICON.png" alt="" width="500" height="50">
-    <p class="important">哈囉!今天是5月6日星期三</p>
-    <img src="1.jpg" alt="" width="200" height="150">
+	<P><img src="慈科大ICON.png" alt="" width="500" height="60"></P>
+
+    <p><script Language="JavaScript1.1">
+        var slidespeed=1800 // 圖片播放速度
+        var slideimages=new Array("1.jpg","2.jpg","3.jpg","4.jpg")
+        var imageholder=new Array()
+        var ie55=window.createPopup
+        for (i=0;i<slideimages .length;i++){ imageholder[i]=new Image()
+        imageholder[i].src=slideimages[i] } function gotoshow(){
+        window.location=slidelinks[whichlink] }
+        </script><img _fcksavedurl="" name="slide" style="filter: progid:DXImageTransform.Microsoft.Pixelate(MaxSquare=15,Duration=1);" align="middle" border="0" /><script language="JavaScript1.1">
+        var whichlink=0
+        var whichimage=0
+        var pixeldelay=(ie55)? document.images.slide.filters[0].duration*1000 : 0
+        function slideit(){ if (!document.images) return
+        if (ie55) document.images.slide.filters[0].apply()
+        document.images.slide.src=imageholder[whichimage].src
+        if (ie55) document.images.slide.filters[0].play()
+        whichlink=whichimage
+        whichimage=(whichimage<slideimages .length-1)? whichimage+1 : 0
+        setTimeout("slideit()",slidespeed+pixeldelay) }
+        slideit() </script></a></p>
+    
     <br>
     <a href="test1.html">
         <input id="b1" type="button" value="測試一" style="width:120px;height:40px;font-size:20px;">
