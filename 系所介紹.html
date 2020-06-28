@@ -5,13 +5,37 @@
 	<title>Document</title>
 </head>
 <body>
+	<P><img src="慈科大ICON.png" alt="" width="100%" ></P>
 	<div id="nav"></div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 	$("#nav").load( "nav.html");
 	</script>
 	<p><font size="5"><b><<系所介紹>></b></font></p>
-	<table style="line-height:25px; border:3px #FFD382 dashed;" cellpadding="10" border='1'>
+	<p><script Language="JavaScript1.1">
+        var slidespeed=1800 // 圖片播放速度
+        var slideimages=new Array("8.jpg","9.jpg","10.jpg","11.jpg")
+        var imageholder=new Array()
+        var ie55=window.createPopup
+        for (i=0;i<slideimages .length;i++){ imageholder[i]=new Image()
+        imageholder[i].src=slideimages[i] } 
+        function gotoshow(){window.location=slidelinks[whichlink] }
+        </script><img _fcksavedurl="" name="slide" style="filter: progid:DXImageTransform.Microsoft.Pixelate(MaxSquare=15,Duration=1);" align="left" border="0" /><script language="JavaScript1.1">
+        var whichlink=0
+        var whichimage=0
+        var pixeldelay=(ie55)? document.images.slide.filters[0].duration*1000 : 0
+        function slideit(){ if (!document.images) return
+        if (ie55) document.images.slide.filters[0].apply()
+        document.images.slide.src=imageholder[whichimage].src
+        if (ie55) document.images.slide.filters[0].play()
+        whichlink=whichimage
+        whichimage=(whichimage<slideimages .length-1)? whichimage+1 : 0
+        setTimeout("slideit()",slidespeed+pixeldelay) }
+        slideit() </script></a>
+
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffriendsdaaitv%2Fvideos%2F303334267217593%2F&show_text=0&width=560" width="500" height="338" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+		</p>
+	<table style="line-height:25px; border:3px #FFD382 dashed;" cellpadding="10" border='1' width="80%">
 		<tr>
 			<td><font size="5"><b>＊系所沿革＊</b></td>
 			<td><font size="4">&emsp;&emsp; 本校為培育慈濟志業資訊人才，於95學年創辦資訊工程系，招收四年制資訊工程系一班。因辦學績優獲教育部核准於98學年再增招生四年制資訊工程系一班，並於99學年分組為四年制「資訊工程組」及「資訊科技與管理組」各一班。為配合政府產業規劃及現今資訊潮流脈動，於102學年更名為資訊科技與管理系並分設為四年制「資訊科技組」48人及「資訊管理組」43人共91人。資訊科技組以數位內容結合雲端行動軟體應用；另資訊管理組則以企業電子化結合應用雲端網路應用專業技能培育為主。<br>
